@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width = device-width", initial-scale=1.0>
+      <title>Car</title>
+      <style>
+        body
+        {
+            margin: 60px;
+        }
+
+        h1
+        {
+            text-align: center;
+        }
+
+        .layout
+        {
+            height: 100vh;
+            display: grid;
+            grid-template-rows:auto 1fr auto;            
+        }
+
+        .layout__middle
+        {
+            display: grid;
+            grid-template-rows:1fr auto auto;
+
+        }
+
+        .rangePerformance
+        {
+            display: grid;
+            grid-template-columns:auto auto;
+
+        }
+
+        .adjustableData
+        {
+            display: grid;
+            grid-template-columns:auto auto auto auto auto;
+
+        }
+
+      
+      
+      
+      </style>
+    </head>
+
+    <body>
+        <div class="layout">
+            <div class="layout__title">
+                <h1>Range Per Charge</h1>
+            </div>
+            <div class="layout__middle">
+                <div>
+                    <img src="img/car.png">
+                </div>
+                
+                <div class = "rangePerformance">
+                    <div class="range">
+                        <p>Long Range</p>
+                        <p>684KM</p>
+                    </div>
+                    <div class="performance">
+                        <p>Ludicrous Performance</p>
+                        <p>660KM</p>
+                    </div>
+                </div>
+                
+                <div class = "adjustableData">
+                    <div class="speed">
+                        <p>Speed</p>
+                        <input type="number">
+                    </div>
+                    <div class="outsideTemperature">
+                        <p>Outside Temperature</p>
+                        <input type="number">
+                    </div>
+                    <div class="AC">
+                        <button>AC OFF</button>
+                    </div>
+                    <div class="Speed"></div>
+                    <div class="Speed"></div>
+                </div>
+
+            </div>
+            <div class="layout__footer">
+                <p>The actual amount of range that you experience will vary based on your particular use conditions. You vehicle range is also dependent on other</p>
+                <p>conditions, such as vehicle configuration, battery age and condition,</p>
+            </div>
+        </div>
+    </body>
+</html>
